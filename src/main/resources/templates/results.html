@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+	<form>
+		<table align="center">
+			<tr th:each="current : ${Student}">
+				<td th:text="${current.StudentId}"/>
+				<td th:text="${current.StudentFirstname}"/>
+				<td th:text="${current.StudentLastName}"/>
+				<td th:text="${current.school.sNo}"/>
+				<td th:text="${current.school.sName}"/>
+				
+				<td><a th:href="@{/edit/{id}(id=${current.StudentId})}">Edit</a></td>
+				<td><a th:href="@{/delete/{id}(id=${current.StudentId})}">Delete</a></td>
+				
+			</tr>
+		</table>
+		<a href="inputStudent">Add a new Student</a>
+	
+	</form>
+</center>
+</body>
+</html>
