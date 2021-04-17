@@ -8,15 +8,15 @@
 <center>
 	<form>
 		<table align="center">
-			<tr th:each="current : ${Student}">
-				<td th:text="${current.StudentId}"/>
-				<td th:text="${current.StudentFirstname}"/>
-				<td th:text="${current.StudentLastName}"/>
-				<td th:text="${current.school.sNo}"/>
-				<td th:text="${current.school.sName}"/>
+			<tr th:each="current : ${student}">
+				<td th:text="${current.StudentID}"/>
+				<td th:text="${current.sName}"/>
+				<td th:text="${current.sLastName}"/>
+				<td th:text="${current.zipCode}"/>
+				<td th:text="${current.schoolName}"/>
 				
-				<td><a th:href="@{/edit/{id}(id=${current.StudentId})}">Edit</a></td>
-				<td><a th:href="@{/delete/{id}(id=${current.StudentId})}">Delete</a></td>
+				<td><a th:href="@{/edit/{id}(id=${current.StudentID})}">Edit</a></td>
+				<td><a th:href="@{/delete/{id}(id=${current.StudentID})}">Delete</a></td>
 				
 			</tr>
 		</table>

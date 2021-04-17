@@ -15,13 +15,13 @@ import company.beans.Student;
 public class BeanConfiguration {
 	
 	@Bean
-	Student Student() {
+	Student student() {
 		Student bean = new Student("Arda","Rugji");
 		return bean;
 	}
 	
 	@Bean 
-	School School() {
+	School school() {
 		School bean = new School(1,"Student");
 		return bean;
 	}

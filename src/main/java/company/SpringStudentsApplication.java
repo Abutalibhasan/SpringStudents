@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import company.beans.Department;
-import company.beans.Employee;
+import company.beans.School;
+import company.beans.Student;
 import company.controller.BeanConfiguration;
-import company.repository.EmployeeRepository;
+import company.repository.StudentRepository;
 
 @SpringBootApplication
 public class SpringStudentsApplication {

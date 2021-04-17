@@ -7,22 +7,22 @@
 <body>
 <center>
 <table>
-	<form th:object="${newStudent}" th:action="@{/update/{id}(id=${newStudent.StudentId})}" method='POST'>
+	<form th:object="${newStudent}" th:action="@{/update/{id}(id=${newStudent.StudentID})}" method='POST'>
 	<tr>
 		<td>First Name:</td> 
-		<td><input name="first" size="20" th:field="*{StudentFirstname}"></td>
+		<td><input name="first" size="20" th:field="*{sName}"></td>
 	</tr>
 	<tr>
 		<td>Last Name:</td>
-		<td><input name="last" size="20" th:field="*{StudentLastName}"></td>
+		<td><input name="last" size="20" th:field="*{sLastName}"></td>
 	</tr>
 	<tr>
 		<td>s No:</td>
-		<td><input name="school.sNo" size="20" th:field="*{school.sNo}"></td>
+		<td><input name="school.sNo" size="20" th:field="*{school.zipCode}"></td>
 	</tr>
 	<tr>
 		<td>s Name:</td>
-		<td><input name="school.sName" size="20" th:field="*{school.sName}"></td>
+		<td><input name="school.sName" size="20" th:field="*{school.schoolName}"></td>
 	</tr>
 	<tr>
 		<td colspan="3" align="center"> <input name="submit" type="submit" value="submit"></td>

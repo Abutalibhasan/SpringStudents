@@ -21,9 +21,9 @@ public class WebController {
 	@Autowired
 	StudentRepository repo;
 	
-	@GetMapping("viewAll")
+	@GetMapping("/viewAll")
 	public String viewAllStudents(Model model) {
-		model.addAttribute("Student", repo.findAll());
+		model.addAttribute("student", repo.findAll());
 		return "results";
 	}
 	
